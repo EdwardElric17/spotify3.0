@@ -1,0 +1,22 @@
+{
+  "name": "spotify-copy-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html ",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdwardElric17/Spotify-Copy.git"
+  },
+  "author": "Mihail Karetnikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EdwardElric17/Spotify-Copy/issues"
+  },
+  "homepage": "https://github.com/EdwardElric17/Spotify-Copy#readme",
+  "dependencies": {
+    "currency-converter-lt": "^2.0.0"
+  }
+}

@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'CircularStd';
+	src: url(fonts/CircularStd-Medium.woff2) format(woff2);
+}
+*, 
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'CircularStd', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+/* body {
+	display: grid;
+	grid-template-rows: auto 112px;
+	height: 100%;
+  	width: 100%;
+} */
+.content {
+	display: grid;
+	grid-template-columns: 310px auto 0;
+	height: 100%;
+	max-width: 100vw;
+	transition: all 0.3s ease;
+	/* grid-template-columns: 310px auto 346px; */
+	/* transition: grid-template-columns 1s ease; */
+}
