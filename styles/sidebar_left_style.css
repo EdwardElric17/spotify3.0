@@ -1,4 +1,5 @@
 .sidebar-left {
+	grid-area: asideL;
 	position: relative;
 	display: flex;
 	flex-direction: column;

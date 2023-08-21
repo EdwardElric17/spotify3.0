@@ -1,5 +1,5 @@
-let content = document.querySelector('.content');
-let middle = document.querySelector('.middle');
+let content = document.querySelector('.wrapper');
+let middle = document.querySelector('.main');
 
 let header = document.querySelector('.friend-activity-header');
 let main = document.querySelector('.friend-activity-main');
@@ -14,14 +14,14 @@ let collectionList = document.querySelector('.collection-list');
 
 let windowWidth = window.innerWidth;
 // collectionList.style.width = '92%';
-content.style.gridTemplateColumns = `calc(100% - (100% - 310px)) calc(100% - 310px) 0px`;
+// content.style.gridTemplateAreas = `310px auto 0px`;
 function close() {
 
 	content.style.overflow = 'hidden';
 	header.style.overflow = 'hidden';
 	main.style.overflow = 'hidden';
 
-	content.style.gridTemplateColumns = `calc(100% - (100% - 310px)) calc(100% - 310px) 0px`;
+	content.style.gridTemplateColumns = `310px 3fr 0px`;
 	// collectionList.style.width = '92%';
 	recMixes.style.gridTemplateColumns = '1fr 1fr 1fr';
 
@@ -42,7 +42,7 @@ function open () {
 	header.style.overflow = 'hidden';
 	main.style.overflow = 'hidden';
 
-	content.style.gridTemplateColumns = '310px calc(100% - 310px - 346px) 346px';
+	content.style.gridTemplateColumns = '310px 3fr 350px';
 	// collectionList.style.width = '92%'
 	recMixes.style.gridTemplateColumns = '1fr 1fr';
 

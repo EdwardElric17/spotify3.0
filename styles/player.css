@@ -22,6 +22,7 @@
 .player .left-part .track-info {
 	display: flex;
 	flex-direction: column;
+	gap: 10px;
 }
 .player .left-part .track-info .title {
 	white-space: nowrap;
@@ -37,10 +38,14 @@
 }
 .player .left-part .track-info .artist:hover,
 .player .left-part .track-info .title:hover {
-	opacity: 0.8;
+	opacity: 0.7;
 }
-.player .left-part img {
+.player .left-part .like {
 	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.like_off {
+	filter: grayscale(1);
 }
 
 .player .center {
@@ -121,31 +126,27 @@
 	justify-content: center;
 	gap: 2px;
 }
-.point-wrapper {
+/* .point-wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid transparent;
-	width: 58px;
-	height: 58px;
+	width: 60px;
+	height: 60px;
 	cursor: pointer;
 	position: relative;
+	background: #181818;
 }
-.point-wrapper:hover {
-	border: 1px solid #323232;
-}
+.point-inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #181818;
+	width: 58.25px;
+	height: 58.25px;
+} */
 .right-part img:hover {
 	cursor: pointer;
 }
 .right-part input {
-	margin-left: 8px;
+	margin: 0px 10px 0px 8px;
 }
-/* .right-part img:nth-child(2) {
-	margin-right: 6px;
-} */
-/* .right-part img:nth-child(3) {
-	margin-right: 8px;
-} */
-/* .right-part img:nth-child(5) {
-	margin-left: 3px;
-} */

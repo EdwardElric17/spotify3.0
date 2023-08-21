@@ -14,8 +14,8 @@
 	<title>Spotify</title>
 </head>
 <body>
-	<section class="content">
-		<div class="sidebar-left">
+	<section class="wrapper">
+		<aside class="sidebar-left">
 			<section class="rectangles">
 				<div class="rectangle-top">
 					<div class="rectangle-block">
@@ -96,8 +96,8 @@
 			</section>
 			<img src="../images&icons/images/button-trigger.png" id="button-trigger" class="trigger-close">
 			<!-- <img src="images&icons/images/button-trigger.png" id="button-trigger-open"> -->
-		</div>
-		<div class="middle">
+		</aside>
+		<main class="main">
 			<div class="header">
 				
 				<div class="search_and_arrows">
@@ -120,21 +120,24 @@
 							<img class="profile-arrow" src="../images&icons/images/Profile_Arrow.png">
 						</div>
 						<div class="context-menu">
-							<div class="account">
-								<span>Account</span>
-								<img src="../images&icons/icons/account-arrow.png">
-							</div>
-							<div class="context-menu-profile">
-								<span>Profile</span>
-							</div>
-							<div class="privat-session">
-								<span>Private session</span>
-							</div>
-							<div class="settings">
-								<span>Settings</span>
-							</div>
-							<div class="log-out">
-								<span>Log out</span>
+							<div class="content1">
+								<a class="account">
+									<span>Account</span>
+									<img class="content-menu-img" src="../images&icons/icons/account-arrow.png">
+								</a>
+								<a class="context-menu-profile">
+									<span>Profile</span>
+								</a>
+								<a class="privat-session">
+									<span>Private session</span>
+								</a>
+								<a class="settings">
+									<span>Settings</span>
+								</a>
+								<hr style="border: 1px solid #3E3E3E">
+								<a class="log-out">
+									<span>Log out</span>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -147,7 +150,7 @@
 					
 				</div>
 			</div>
-			<div class="main">
+			<div class="content2">
 				<h1>Good afternoon</h1>
 				<div class="rec-mixes">
 						<div class="mix">
@@ -466,61 +469,78 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="sidebar-right">
-			<div class="friend-activity-header">
-				<div>
-					<img src="../images&icons/icons/User_Plus_S.png">
-					<img src="../images&icons/icons/Union.png" class="closing-cross">
+		</main>
+		<aside class="sidebar-right">
+			<div class="content3">
+				<div class="friend-activity-header">
+					<div>
+						<img src="../images&icons/icons/User_Plus_S.png">
+						<img src="../images&icons/icons/Union.png" class="closing-cross">
+					</div>
 				</div>
+				<div class="friend-activity-main">
+					<p>
+						Let friends and followers on Spotify see what you're listening to.
+					</p>
+					<div class="friend">
+						<img src="../images&icons/icons/User_Blue.png">
+						<img src="../images&icons/icons/Union_desc.png">
+					</div>
+					<div class="friend">
+						<img src="../images&icons/icons/User_Blue.png">
+						<img src="../images&icons/icons/Union_desc.png">
+					</div>
+					<div class="friend">
+						<img src="../images&icons/icons/User_Blue.png">
+						<img src="../images&icons/icons/Union_desc.png">
+					</div>
+					<p>Go to Settings > Social and enable "Share my listening activity on Spotify". You can turn this off at any time.</p>
+					<div class="button">
+						setting
+					</div>
+				</div>	
 			</div>
-			<div class="friend-activity-main">
-				<p>Let friends and followers on Spotify see what you're listening to.</p>
-				<div class="friend">
-					<img src="../images&icons/icons/User_Blue.png">
-					<img src="../images&icons/icons/Union_desc.png">
-				</div>
-				<div class="friend">
-					<img src="../images&icons/icons/User_Blue.png">
-					<img src="../images&icons/icons/Union_desc.png">
-				</div>
-				<div class="friend">
-					<img src="../images&icons/icons/User_Blue.png">
-					<img src="../images&icons/icons/Union_desc.png">
-				</div>
-				<p>Go to Settings > Social and enable "Share my listening activity on Spotify". You can turn this off at any time.</p>
-				<div class="button">
-					setting
-				</div>
-			</div>
-		</div>
+		</aside>
 	</section>
 	<section class="player">
+		<audio src=""></audio>
 		<div class="left-part">
 			<div class="track-info">
 				<div class="title">Play It Safe</div>
 				<div class="artist">Julia Wolf</div>
 			</div>
-			<div class="like">
-				<img src="../images&icons/images/like.png">
+			<div class="point-wrapper">
+				<div class="point-inner like ">
+					<img src="../images&icons/images/like.png">
+				</div>
 			</div>
 		</div>
 		<div class="center">
 			<div class="top-part">
 				<div class="point-wrapper">
-					<img src="../images&icons/images/mix.png">
+					<div class="point-inner">
+						<img src="../images&icons/images/mix.png">
+					</div>
 				</div>
 				<div class="point-wrapper">
-					<img src="../images&icons/images/player-back.png">
+					<div class="point-inner">
+						<img src="../images&icons/images/player-back.png">
+					</div>
 				</div>
 				<div class="point-wrapper">
-					<img src="../images&icons/images/pause.png">
+					<div class="point-inner play-stop">
+						<img src="../images&icons/images/pause.png">
+					</div>
 				</div>
 				<div class="point-wrapper">
-					<img src="../images&icons/images/player-forward.png">
+					<div class="point-inner">
+						<img src="../images&icons/images/player-forward.png">
+					</div>
 				</div>
 				<div class="point-wrapper">
-					<img src="../images&icons/images/repeat.png">
+					<div class="point-inner">
+						<img src="../images&icons/images/repeat.png">
+					</div>
 				</div>
 			</div>
 			<div class="bottom-part">
@@ -530,21 +550,28 @@
 			</div>
 		</div>
 		<div class="right-part">
-			<img src="../images&icons/images/volume.png">
+			<img class="volume" src="../images&icons/images/volume.png">
 			<input type="range" class="timeline" value="">
 			<div class="point-wrapper">
-				<img src="../images&icons/images/playlist.png">
+				<div class="point-inner">
+					<img src="../images&icons/images/playlist.png">
+				</div>
 			</div>
 			<div class="point-wrapper">
-				<img src="../images&icons/images/device.png">
+				<div class="point-inner">
+					<img src="../images&icons/images/device.png">
+				</div>
 			</div>
 			<div class="point-wrapper">
-				<img src="../images&icons/images/expand.png">
+				<div class="point-inner">
+					<img src="../images&icons/images/expand.png">
+				</div>
 			</div>
 		</div>
 	</section>
-	<script src="../js/sidebar_right.js"></script>
+	<script src="../js/sidebar_R.js"></script>
 	<script src="../js/preview.js"></script>
 	<script src="../js/context-menu.js"></script>
+	<script src="../js/player.js"></script>
 </body>
 </html>

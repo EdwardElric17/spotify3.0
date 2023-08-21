@@ -1,4 +1,5 @@
-.middle {
+.main {
+	grid-area: main;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -74,6 +75,7 @@
 	background: #000;
 	border-radius: 42px;
 	cursor: pointer;
+	z-index: 100;
 }
 .my-profile img:first-child {
 	height: 40px;
@@ -89,45 +91,49 @@
 	opacity: 0.7;
 }
 
-.context-menu {
+/* .context-menu {
 	background: #181818;
 	border-radius: 2px;
 	color: #fff;
 	max-height: 354px;
-}
-.context-menu > div {
+} */
+
+.context-menu {
+	display: grid;
+	grid-template-rows: 1fr;
+	background: #181818;
+	border-radius: 2px;
+	color: #fff;
+	transition: all 0.3s ease;
 	padding: 15px 21px;
-	cursor: pointer;
 }
-.context-menu > div:hover {
+.context-menu .content1 {
+	display: grid;
+	gap: 20px;
+	min-height: 0;
+	overflow: hidden;
+}
+
+.context-menu a {
+	cursor: pointer;
+	overflow: hidden;
+}
+.context-menu a:hover {
 	opacity: 0.7;
 }
-.context-menu > div span {
+.context-menu a span {
 	font-size: 17px;
 	font-weight: 200;
+	overflow: hidden;
 }
 .context-menu .account {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-.context-menu .settings {
-	border-bottom: 1px solid #3E3E3E;
-	/* padding-bottom: 9px; */
-}
+
 .context-menu .account img {
 	height: 12px;
-}
-.context-menu-elem-toggle {
-	max-height: 0;
-	overflow: hidden;
-	padding: 0 !important;
-	margin: 0;
-	border: none !important;
-}
-.context-menu-toggle {
-	max-height: 0;
-	padding: 0;
 }
 
 .friends:hover span{
@@ -145,27 +151,28 @@
 	white-space: nowrap;
 }
 
-.main {
-	display: flex;
+.main .content2 {
+	/* display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: center; */
 	padding: 30px 41px;
 	width: 100%;
 }
-.middle .main h1 {
+.main .content2 h1 {
 	font-size: 39px;
 	color: #fff;
 	width: 100%;
 }
-.middle .main .rec-mixes {
+.main .content2 .rec-mixes {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	margin-top: 29px;
-	gap: 20px;
+	grid-column-gap: 30px;
+	grid-row-gap: 20px;
 	width: 100%;
 }
 
-.middle .main .rec-mixes .mix {
+.main .content2 .rec-mixes .mix {
 	display: flex;
 	align-items: center;
 	gap: 21px;
@@ -176,12 +183,12 @@
 	background: rgba(255, 255, 255, 0.1);
 	cursor: pointer;
 }
-.middle .main .rec-mixes .mix:hover {
+.main .content2 .rec-mixes .mix:hover {
 	background: rgba(255, 255, 255, 0.14);
 }
-.middle .main .collections {
-	display: flex;
-	flex-direction: column;
+.main .content2 .collections {
+	/* display: flex;
+	flex-direction: column; */
 	width: 100%;
 }
 .collections .collection-n{
@@ -211,12 +218,10 @@
 }
 .collections .collection-list {
 	display: flex;
-	justify-content: space-between;
 	gap: 31px;
-	width: 100%;
+	transition: width 0.3s ease;
 	border-radius: 8px;
 	overflow: scroll;
-	transition: width 0.3s ease;
 }
 .collection-list::-webkit-scrollbar {
 	width: 0px;

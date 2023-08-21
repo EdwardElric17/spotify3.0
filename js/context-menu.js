@@ -1,15 +1,56 @@
 let contextMenu = document.querySelector('.context-menu');
+let profile = document.querySelector('.profile');
 let myProfile = document.querySelector('.my-profile');
-let context_Menu_Objects = document.querySelectorAll('.context-menu > div')
+let contextMenuElems = document.querySelectorAll('.context-menu a');
+let content = document.querySelector('.context-menu .content1');
 
-context_Menu_Objects.forEach(element => {
-	element.classList.toggle('context-menu-elem-toggle')
+contextMenu.classList.toggle('closed')
+contextMenu.style.gridTemplateRows = '0fr'
+contextMenu.style.padding = '0px'
+content.style.overflow = 'hidden'
+content.querySelector('hr').style.display = 'none'
+
+contextMenuElems.forEach(element => {
+	element.style.display = 'none';
 });
-contextMenu.classList.toggle('context-menu-toggle')
+
+
+function close() {
+	contextMenu.style.gridTemplateRows = '0fr'
+	contextMenu.style.padding = '0px'
+	content.style.overflow = 'hidden'
+	content.querySelector('hr').style.display = 'none'
+
+	contextMenuElems.forEach(element => {
+		element.style.display = 'none';
+	});
+
+}
+function open() {
+	contextMenu.style.gridTemplateRows = '1fr'
+	contextMenu.style.padding = '15px 21px'
+	content.style.overflow = ''
+	content.querySelector('hr').style.display = ''
+
+	contextMenuElems.forEach(element => {
+		element.style.display = '';
+	});
+
+}
+document.addEventListener('click', (event) => {
+	if (!profile.contains(event.target) && !contextMenu.classList.contains('closed')) {
+		contextMenu.classList.toggle('closed')
+		close();
+	}
+});
 
 myProfile.addEventListener('click', () => {
-	context_Menu_Objects.forEach(element => {
-		element.classList.toggle('context-menu-elem-toggle')
-	});
-	contextMenu.classList.toggle('context-menu-toggle')
+	if (contextMenu.classList.contains('closed')) {
+		contextMenu.classList.toggle('closed');
+		open();
+	}
+	else {
+		contextMenu.classList.toggle('closed')
+		close();
+	}
 });
