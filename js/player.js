@@ -39,7 +39,8 @@ volume.addEventListener('click', () => {
 let play_stop = document.querySelector('.play-stop');
 
 play_stop.addEventListener('click', () => {
-	let src = play_stop.querySelector('img').src;
+	let src = play_stop.childElementCount();
+	console.log(src)
 	if (src == '../images&icons/images/pause.png') {
 		play_stop.querySelector('img').src = '../images&icons/images/play.png'
 		play_stop.querySelector('img').style.filter = 'invert(1)'
