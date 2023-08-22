@@ -38,7 +38,6 @@
 	align-items: center;
 	width: 60px;
 	height: 60px;
-	/* padding: 1px; */
 	cursor: pointer;
 	position: relative;
 	background: #181818;
@@ -50,11 +49,7 @@
 	background: #181818;
 	width: 58.25px;
 	height: 58.25px;
-	/* padding: 20px; */
 }
-/* .point-inner:only-child {
-	
-} */
 @keyframes pointInnerClick {
 	0% {
 		transform: scale(100%);

@@ -18,22 +18,7 @@ pointInnerChild.forEach(child => {
 });
 
 
-// Выключение/включение звука при нажатии на значок звука
-let volume = document.querySelector('.volume');
-let input = document.querySelector('.right-part .timeline');
-let inputValue = input.value;
 
-input.addEventListener('input', () => {
-	inputValue = input.value;
-})
-
-volume.addEventListener('click', () => {
-	if (input.value != 0) {
-		input.value = 0;
-	} else {
-		input.value = inputValue;
-	}
-})
 
 // Появление свечения при приближении к блокам
 let pointWrappers = document.querySelectorAll('.point-wrapper');
@@ -121,6 +106,22 @@ pointInners.forEach(pointInner => {
 
 });
 
+// Включение/выключение музыки
+// let timeline = document.querySelector('.timeline');
+// let song = document.querySelector('.song');
+// let playStop = document.querySelector('play-stop');
+
+// let playing = false;
+
+// song.onloadedmetadata = function() {
+// 	timeline.max = song.duration;
+// 	timeline.value = song.currentTime;
+// }
+
+function playPause() {
+
+}
+
 // Изменение плэй/стоп
 let timeline = document.querySelector('.timeline');
 let song = document.querySelector('.song');
@@ -155,5 +156,27 @@ playStop.addEventListener('click', () => {
 		playStop.classList.toggle('playing')
 
 		song.play();
+	}
+})
+// Выключение/включение звука при нажатии на значок звука
+let volumeSymbol = document.querySelector('.volume-symbol');
+let volumeRange = document.querySelector('.right-part .volume-range');
+
+let volumeRangeValue = volumeRange.value;
+song.volume = volumeRangeValue / 100;
+console.log(song.volume)
+
+volumeRange.addEventListener('input', () => {
+	volumeRangeValue = volumeRange.value
+	song.volume = volumeRangeValue / 100;
+})
+
+volumeSymbol.addEventListener('click', () => {
+	if (volumeRange.value != 0) {
+		volumeRange.value = 0;
+		song.volume = volumeRange.value;
+	} else {
+		volumeRange.value = volumeRangeValue;
+		song.volume = volumeRangeValue / 100;
 	}
 })
