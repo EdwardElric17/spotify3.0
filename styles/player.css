@@ -90,8 +90,8 @@
 	outline: none;
 	overflow: hidden;
 }
-.player .center .bottom-part .timeline::-webkit-slider-thumb {
-	height: 5px;
+.timeline::-webkit-slider-thumb {
+	height: 20px;
 	width: 4px;
 	background: #ffffff;
 	appearance: none;
@@ -109,7 +109,7 @@
 	outline: none;
 	overflow: hidden;
 }
-.player .right-part .timeline::-webkit-slider-thumb {
+/* .player .right-part .timeline::-webkit-slider-thumb {
 	height: 5px;
 	width: 4px;
 	background: #ffffff;
@@ -118,7 +118,7 @@
 	border-radius: 4px;
 	box-shadow: -100px 0px 0px 100px#fff;
 	border: 0;
-}
+} */
 
 .right-part {
 	display: flex;
