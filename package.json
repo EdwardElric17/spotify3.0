@@ -1,11 +1,12 @@
 {
   "name": "spotify-copy-main",
   "version": "1.0.0",
-  "description": "",
   "main": "index.html ",
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
-  },
+    "start": "node index.js",
+	"json-Translate" : "node ./js/player/musicToJson.js"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EdwardElric17/Spotify-Copy.git"
@@ -18,6 +19,8 @@
   "homepage": "https://github.com/EdwardElric17/Spotify-Copy#readme",
   "dependencies": {
     "currency-converter-lt": "^2.0.0",
-    "express": "^4.18.2"
-  }
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security"
+  },
+  "description": ""
 }

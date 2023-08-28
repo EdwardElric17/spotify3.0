@@ -104,7 +104,7 @@
 	background: #181818;
 	border-radius: 2px;
 	color: #fff;
-	transition: all 0.3s ease;
+	/* transition: all 0.3s ease; */
 	padding: 15px 21px;
 }
 .context-menu .content1 {

@@ -5,7 +5,7 @@ playerLike.addEventListener('click', () => {
 	playerLike.classList.toggle('like_off');
 });
 
-//Анимация нажатия на кнопки
+// Анимация нажатия на кнопки
 let pointInnerChild = document.querySelectorAll('.point-inner:only-child');
 
 pointInnerChild.forEach(child => {
@@ -16,9 +16,6 @@ pointInnerChild.forEach(child => {
 		}, 300);
 	})
 });
-
-
-
 
 // Появление свечения при приближении к блокам
 let pointWrappers = document.querySelectorAll('.point-wrapper');
@@ -66,7 +63,6 @@ pointWrappers.forEach(pointWrapper => {
 
 });
 
-
 //Появление ореола внутри блока
 let pointInners = document.querySelectorAll('.point-inner');
 
@@ -105,78 +101,69 @@ pointInners.forEach(pointInner => {
 	})
 
 });
+// function playPause() {
 
-// Включение/выключение музыки
+// }
+
+// // Изменение плэй/стоп
 // let timeline = document.querySelector('.timeline');
 // let song = document.querySelector('.song');
-// let playStop = document.querySelector('play-stop');
+// let playStop = document.querySelector('.play-stop');
 
-// let playing = false;
+// let songCurrentTime = song.currentTime;
+// let songDuration = song.duration;
 
 // song.onloadedmetadata = function() {
 // 	timeline.max = song.duration;
 // 	timeline.value = song.currentTime;
 // }
+// timeline.max = song.duration;
+// timeline.value = song.currentTime;
 
-function playPause() {
+// setInterval(() => {
+// 	timeline.value = song.currentTime;
+// }, 1000);
+// timeline.onchange = function() {
+// 	song.currentTime = timeline.value
+// }
 
-}
+// playStop.addEventListener('click', () => {
 
-// Изменение плэй/стоп
-let timeline = document.querySelector('.timeline');
-let song = document.querySelector('.song');
-let playStop = document.querySelector('.play-stop');
+// 	let src = playStop.querySelector('img').src;
+// 	if (src == 'http://127.0.0.1:3002/images&icons/images/pause.png') {
+// 		playStop.querySelector('img').src = 'http://127.0.0.1:3002/images&icons/images/play.png'
+// 		playStop.querySelector('img').style.filter = 'invert(1)'
+// 		playStop.classList.toggle('playing')
 
-let songCurrentTime = song.currentTime;
-let songDuration = song.duration;
-song.onloadedmetadata = function() {
-	timeline.max = song.duration;
-	timeline.value = song.currentTime;
-}
-setInterval(() => {
-	timeline.value = song.currentTime;
-}, 1000);
-timeline.onchange = function() {
-	song.currentTime = timeline.value
-}
+// 		song.pause();
+// 	} 
+// 	else {
+// 		playStop.querySelector('img').src = 'http://127.0.0.1:3002/images&icons/images/pause.png'
+// 		playStop.querySelector('img').style.filter = ''
+// 		playStop.classList.toggle('playing')
 
-playStop.addEventListener('click', () => {
+// 		song.play();
+// 	}
+// })
+// // Выключение/включение звука при нажатии на значок звука
+// let volumeSymbol = document.querySelector('.volume-symbol');
+// let volumeRange = document.querySelector('.right-part .volume-range');
 
-	let src = playStop.childNodes[1].src;
-	if (src == 'http://127.0.0.1:3002/images&icons/images/pause.png') {
-		playStop.querySelector('img').src = 'http://127.0.0.1:3002/images&icons/images/play.png'
-		playStop.querySelector('img').style.filter = 'invert(1)'
-		playStop.classList.toggle('playing')
+// let volumeRangeValue = volumeRange.value;
+// song.volume = volumeRangeValue / 100;
+// console.log(song.volume)
 
-		song.pause();
-	} 
-	else {
-		playStop.querySelector('img').src = 'http://127.0.0.1:3002/images&icons/images/pause.png'
-		playStop.querySelector('img').style.filter = ''
-		playStop.classList.toggle('playing')
+// volumeRange.addEventListener('input', () => {
+// 	volumeRangeValue = volumeRange.value
+// 	song.volume = volumeRangeValue / 100;
+// })
 
-		song.play();
-	}
-})
-// Выключение/включение звука при нажатии на значок звука
-let volumeSymbol = document.querySelector('.volume-symbol');
-let volumeRange = document.querySelector('.right-part .volume-range');
-
-let volumeRangeValue = volumeRange.value;
-song.volume = volumeRangeValue / 100;
-console.log(song.volume)
-
-volumeRange.addEventListener('input', () => {
-	volumeRangeValue = volumeRange.value
-	song.volume = volumeRangeValue / 100;
-})
-
-volumeSymbol.addEventListener('click', () => {
-	if (volumeRange.value != 0) {
-		volumeRange.value = 0;
-		song.volume = volumeRange.value;
-	} else {
-		volumeRange.value = volumeRangeValue;
-		song.volume = volumeRangeValue / 100;
-	}
-})
+// volumeSymbol.addEventListener('click', () => {
+// 	if (volumeRange.value != 0) {
+// 		volumeRange.value = 0;
+// 		song.volume = volumeRange.value;
+// 	} else {
+// 		volumeRange.value = volumeRangeValue;
+// 		song.volume = volumeRangeValue / 100;
+// 	}
+// })

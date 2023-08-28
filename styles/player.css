@@ -81,7 +81,9 @@
 	color: #A6A6A6;
 	font-size: 16px;
 }
-.player .center .bottom-part .timeline {
+
+
+/* .player .center .bottom-part .timeline {
 	width: 552px;
 	height: 5px;
 	appearance: none;
@@ -108,7 +110,36 @@
 	border-radius: 4px;
 	outline: none;
 	overflow: hidden;
+} */
+
+.progress-container {
+	width: 552px;
+	height: 5px;
+	background: #A6A6A6;
+	border-radius: 4px;
+	cursor: pointer;
 }
+.progress {
+	width: 100px;
+	height: 5px;
+	background: #ffffff;
+	border-radius: 4px;
+}
+.volume-progress-container {
+	width: 119px;
+	height: 5px;
+	background: #A6A6A6;
+	border-radius: 4px;
+	/* margin: 0 10px; */
+	cursor: pointer;
+}
+.volume-progress {
+	width: 10px;
+	height: 5px;
+	background: #ffffff;
+	border-radius: 4px;
+}
+
 /* .player .right-part .timeline::-webkit-slider-thumb {
 	height: 5px;
 	width: 4px;
@@ -126,24 +157,6 @@
 	justify-content: center;
 	gap: 2px;
 }
-/* .point-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 60px;
-	height: 60px;
-	cursor: pointer;
-	position: relative;
-	background: #181818;
-}
-.point-inner {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: #181818;
-	width: 58.25px;
-	height: 58.25px;
-} */
 .right-part img:hover {
 	cursor: pointer;
 }

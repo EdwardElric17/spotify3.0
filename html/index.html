@@ -517,43 +517,51 @@
 		<div class="center">
 			<div class="top-part">
 				<div class="point-wrapper">
-					<div class="point-inner">
+					<div class="point-inner mix">
 						<img src="../images&icons/images/mix.png">
 					</div>
 				</div>
 				<div class="point-wrapper">
-					<div class="point-inner">
+					<div class="point-inner prevBtn">
 						<img src="../images&icons/images/player-back.png">
 					</div>
 				</div>
 				<div class="point-wrapper">
-					<div class="point-inner play-stop" onclick="playPause()">
+					<div class="point-inner play-stop">
 						<img src="../images&icons/images/play.png" style="filter: invert(1)">
 					</div>
 				</div>
 				<div class="point-wrapper">
-					<div class="point-inner">
+					<div class="point-inner nextBtn">
 						<img src="../images&icons/images/player-forward.png">
 					</div>
 				</div>
 				<div class="point-wrapper">
-					<div class="point-inner">
+					<div class="point-inner loop-playlist">
 						<img src="../images&icons/images/repeat.png">
 					</div>
 				</div>
 			</div>
 			<div class="bottom-part">
-				<p>2:39</p>
-				<input type="range" class="timeline" value="0">
-				<audio class="song" volume="50">
-					<source src="/music/default/Chy - Whitley.mp3">
-				</audio>
-				<p>4:22</p>
+				<p class="current-time">2:39</p>
+				<!-- <input type="range" class="timeline" value="0"> -->
+				<div class="progress-container">
+					<div class="progress"></div>
+				</div>
+				<audio class="audio" volume="50" src=""></audio>
+				<p class="song-duration">4:22</p>
 			</div>
 		</div>
 		<div class="right-part">
-			<img class="volume-symbol" src="../images&icons/images/volume.png">
-			<input type="range" class="timeline volume-range" value="">
+			<div class="point-wrapper">
+				<div class="point-inner">
+					<img class="volume-symbol" src="../images&icons/images/volume.png">
+				</div>
+			</div>
+			<!-- <input type="range" class="timeline volume-range" value=""> -->
+			<div class="volume-progress-container">
+				<div class="volume-progress"></div>
+			</div>
 			<div class="point-wrapper">
 				<div class="point-inner">
 					<img src="../images&icons/images/playlist.png">
@@ -574,6 +582,8 @@
 	<script src="../js/sidebar_R.js"></script>
 	<script src="../js/preview.js"></script>
 	<script src="../js/context-menu.js"></script>
-	<script src="../js/player.js"></script>
+	<script src="../js/player/point-glowing.js"></script>
+	<!-- <script type="module" src="../modules/music_data.js"></script> -->
+	<script src="../js/player/functionality.js"></script>
 </body>
 </html>
