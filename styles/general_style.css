@@ -40,13 +40,14 @@
 	height: 60px;
 	cursor: pointer;
 	position: relative;
-	background: #181818;
+	background: rgba(24, 24, 24);
 }
 .point-inner {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #181818;
+	background: rgba(24, 24, 24);
+	/* backdrop-filter: blur(25px); */
 	width: 58.25px;
 	height: 58.25px;
 }
