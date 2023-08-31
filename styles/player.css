@@ -127,14 +127,16 @@
 	cursor: pointer;
 }
 .progress {
-	width: 100px;
+	width: 0px;
+	max-width: 552px;
 	height: 5px;
 	background: #ffffff;
 	border-radius: 4px;
+	/* transition: width 10s linear; */
 }
 .volume-range-container {
 	width: 119px;
-	height: 5px;
+	height: 6px;
 	background: #A6A6A6;
 	border-radius: 4px;
 	/* margin: 0 10px; */
@@ -143,7 +145,7 @@
 .volume-range {
 	width: 59.5px;
 	max-width: 119px;
-	height: 5px;
+	height: 6px;
 	background: #ffffff;
 	border-radius: 4px;
 }

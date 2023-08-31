@@ -47,9 +47,12 @@
 	justify-content: center;
 	align-items: center;
 	background: rgba(24, 24, 24);
-	/* backdrop-filter: blur(25px); */
 	width: 58.25px;
 	height: 58.25px;
+}
+.looped,
+.mixed {
+	background: rgb(45, 45, 45) !important;
 }
 @keyframes pointInnerClick {
 	0% {

@@ -2,7 +2,6 @@
   "name": "spotify-copy-main",
   "version": "1.0.0",
   "main": "index.html ",
-  "type": "module",
   "scripts": {
     "start": "node index.js",
 	"json-Translate" : "node ./js/player/musicToJson.js"
