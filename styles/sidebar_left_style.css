@@ -72,7 +72,7 @@
 	height: 310px;
 	width: 310px;
 	max-height: 310px;
-	background: url(/images&icons/images/preview-image.png);
+	background: url();
 	background-size: cover;
 	transition: max-height 0.2s ease;
 }
