@@ -16,7 +16,7 @@ const player = document.querySelector('.player'),
 	volumeImg = document.querySelector('.player .volume-symbol'),
 	volumeRange = document.querySelector('.player .volume-range'),
 	volumeRangeContainer = document.querySelector('.player .volume-range-container'),
-	music_default_url = '../../music/default/tracks_data.json'
+	music_default_url = '../../music/json_files/tracks_data.json'
 
 let dataLength = 0; // data size
 let songCash = []; // Song cash
@@ -43,9 +43,14 @@ function loadSong(track) {
 	
 	title.innerHTML = track.data.title; // Title
 	artist.innerHTML = track.data.artist; // Artist
-	audio.src = track.data.path; // Audio source
+	audio.src = "/" + track.data.path.replace(/\\/g, "/"); // Audio source
 	currentTimeBlock.innerHTML = timeCalc(audio.currentTime); // Time block calc
-	preview.style.background = `url(${track.data.coverImage})`; // Preview download
+
+	let previewPath = "/" + track.data.coverImage.replace(/\\/g, "/");
+	console.log(previewPath);
+	previewImg.style.background = `url("${previewPath}")`; // Preview download
+	// previewImg.style.background = `url("/music/cover_image/Ødyzon - constellation.jpg")`; // Preview download
+	
 	// download metadata
 	audio.onloadedmetadata = function() {
 		songDuration.innerHTML = timeCalc(audio.duration); 

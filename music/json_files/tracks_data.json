@@ -1,0 +1,191 @@
+[
+    {
+        "Name": "22Gz - Twirlanta",
+        "data": {
+            "path": "music\\default\\22Gz - Twirlanta.mp3",
+            "coverImage": "music\\cover_image\\22Gz - Twirlanta.jpg",
+            "artist": "22Gz",
+            "title": "Twirlanta"
+        }
+    },
+    {
+        "Name": "Bleach - Never Meant To Belong ( Kayou Remix ) Slowed",
+        "data": {
+            "path": "music\\default\\Bleach - Never Meant To Belong ( Kayou Remix ) Slowed.mp3",
+            "coverImage": "music\\cover_image\\Bleach - Never Meant To Belong ( Kayou Remix ) Slowed.jpg",
+            "artist": "Bleach",
+            "title": "Never Meant To Belong ( Kayou Remix ) Slowed"
+        }
+    },
+    {
+        "Name": "Chy - Whitley",
+        "data": {
+            "path": "music\\default\\Chy - Whitley.mp3",
+            "coverImage": "music\\cover_image\\Chy - Whitley.jpg",
+            "artist": "Chy",
+            "title": "Whitley"
+        }
+    },
+    {
+        "Name": "daniel_mp3 - green to blue (slowed + reverbed)",
+        "data": {
+            "path": "music\\default\\daniel_mp3 - green to blue (slowed + reverbed).mp3",
+            "coverImage": "music\\cover_image\\daniel_jpg - green to blue (slowed + reverbed).mp3",
+            "artist": "daniel_mp3",
+            "title": "green to blue (slowed + reverbed)"
+        }
+    },
+    {
+        "Name": "heart - вчера я видел сон",
+        "data": {
+            "path": "music\\default\\heart - вчера я видел сон.mp3",
+            "coverImage": "music\\cover_image\\heart - вчера я видел сон.jpg",
+            "artist": "heart",
+            "title": "вчера я видел сон"
+        }
+    },
+    {
+        "Name": "Hiroyuki Sawano ft Mika Kobayashi - Attack on titan OST",
+        "data": {
+            "path": "music\\default\\Hiroyuki Sawano ft Mika Kobayashi - Attack on titan OST.mp3",
+            "coverImage": "music\\cover_image\\Hiroyuki Sawano ft Mika Kobayashi - Attack on titan OST.jpg",
+            "artist": "Hiroyuki Sawano ft Mika Kobayashi",
+            "title": "Attack on titan OST"
+        }
+    },
+    {
+        "Name": "hisohkah feat. WMD - School Rooftop (Bird Sounds)",
+        "data": {
+            "path": "music\\default\\hisohkah feat. WMD - School Rooftop (Bird Sounds).mp3",
+            "coverImage": "music\\cover_image\\hisohkah feat. WMD - School Rooftop (Bird Sounds).jpg",
+            "artist": "hisohkah feat. WMD",
+            "title": "School Rooftop (Bird Sounds)"
+        }
+    },
+    {
+        "Name": "memo boy - Brian is the Most Beautiful (slowed + reverb)",
+        "data": {
+            "path": "music\\default\\memo boy - Brian is the Most Beautiful (slowed + reverb).mp3",
+            "coverImage": "music\\cover_image\\memo boy - Brian is the Most Beautiful (slowed + reverb).jpg",
+            "artist": "memo boy",
+            "title": "Brian is the Most Beautiful (slowed + reverb)"
+        }
+    },
+    {
+        "Name": "NKOHA - ガッツ [preview]",
+        "data": {
+            "path": "music\\default\\NKOHA - ガッツ [preview].mp3",
+            "coverImage": "music\\cover_image\\NKOHA - ガッツ [preview].jpg",
+            "artist": "NKOHA",
+            "title": "ガッツ [preview]"
+        }
+    },
+    {
+        "Name": "NodPunk - Кино",
+        "data": {
+            "path": "music\\default\\NodPunk - Кино.mp3",
+            "coverImage": "music\\cover_image\\NodPunk - Кино.jpg",
+            "artist": "NodPunk",
+            "title": "Кино"
+        }
+    },
+    {
+        "Name": "OPM - Garou's Theme",
+        "data": {
+            "path": "music\\default\\OPM - Garou's Theme.mp3",
+            "coverImage": "music\\cover_image\\OPM - Garou's Theme.jpg",
+            "artist": "OPM",
+            "title": "Garou's Theme"
+        }
+    },
+    {
+        "Name": "pyrokinesis - я краснею при тебе как",
+        "data": {
+            "path": "music\\default\\pyrokinesis - я краснею при тебе как.mp3",
+            "coverImage": "music\\cover_image\\pyrokinesis - я краснею при тебе как.jpg",
+            "artist": "pyrokinesis",
+            "title": "я краснею при тебе как"
+        }
+    },
+    {
+        "Name": "richy mitch & the coal miners ♡ - evergreen (speed up)",
+        "data": {
+            "path": "music\\default\\richy mitch & the coal miners ♡ - evergreen (speed up).mp3",
+            "coverImage": "music\\cover_image\\richy mitch & the coal miners ♡ - evergreen (speed up).jpg",
+            "artist": "richy mitch & the coal miners ♡",
+            "title": "evergreen (speed up)"
+        }
+    },
+    {
+        "Name": "scxpz + - racing hearts",
+        "data": {
+            "path": "music\\default\\scxpz + - racing hearts.mp3",
+            "coverImage": "music\\cover_image\\scxpz + - racing hearts.jpg",
+            "artist": "scxpz +",
+            "title": "racing hearts"
+        }
+    },
+    {
+        "Name": "slow - i dont wanna do this anymore",
+        "data": {
+            "path": "music\\default\\slow - i dont wanna do this anymore.mp3",
+            "coverImage": "music\\cover_image\\slow - i dont wanna do this anymore.jpg",
+            "artist": "slow",
+            "title": "i dont wanna do this anymore"
+        }
+    },
+    {
+        "Name": "sparky deathcap - september (speed up) ",
+        "data": {
+            "path": "music\\default\\sparky deathcap - september (speed up) .mp3",
+            "coverImage": "music\\cover_image\\sparky deathcap - september (speed up) .jpg",
+            "artist": "sparky deathcap",
+            "title": "september (speed up) "
+        }
+    },
+    {
+        "Name": "théos, Antent - mirage",
+        "data": {
+            "path": "music\\default\\théos, Antent - mirage.mp3",
+            "coverImage": "music\\cover_image\\théos, Antent - mirage.jpg",
+            "artist": "théos, Antent",
+            "title": "mirage"
+        }
+    },
+    {
+        "Name": "thx so much - Hate",
+        "data": {
+            "path": "music\\default\\thx so much - Hate.mp3",
+            "coverImage": "music\\cover_image\\thx so much - Hate.jpg",
+            "artist": "thx so much",
+            "title": "Hate"
+        }
+    },
+    {
+        "Name": "TikTok - Godjo Satoru",
+        "data": {
+            "path": "music\\default\\TikTok - Godjo Satoru.mp3",
+            "coverImage": "music\\cover_image\\TikTok - Godjo Satoru.jpg",
+            "artist": "TikTok",
+            "title": "Godjo Satoru"
+        }
+    },
+    {
+        "Name": "XXXTENTACION - Teeth (Trap Remix)",
+        "data": {
+            "path": "music\\default\\XXXTENTACION - Teeth (Trap Remix).mp3",
+            "coverImage": "music\\cover_image\\XXXTENTACION - Teeth (Trap Remix).jpg",
+            "artist": "XXXTENTACION",
+            "title": "Teeth (Trap Remix)"
+        }
+    },
+    {
+        "Name": "Ødyzon - constellation",
+        "data": {
+            "path": "music\\default\\Ødyzon - constellation.mp3",
+            "coverImage": "music\\cover_image\\Ødyzon - constellation.jpg",
+            "artist": "Ødyzon",
+            "title": "constellation"
+        }
+    }
+]

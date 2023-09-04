@@ -1,9 +1,10 @@
-// const path = require('path');
-// const fs = require('fs');
-import fs from "fs";
-import path from "path";
+const path = require('path');
+const fs = require('fs');
+// import fs from "fs";
+// import path from "path";
 
 const audioFolderPath = './music/default';
+const previewFolderPath = './music/cover_image'
 
 fs.readdir(audioFolderPath, (err, files) => {
     if (err) {
@@ -17,12 +18,14 @@ fs.readdir(audioFolderPath, (err, files) => {
             const trackName = path.parse(file).name;
 			const trackArtist = trackName.split(' - ')[0];
 			const trackTitle = trackName.split(' - ')[1];
-            const trackPath = path.join(audioFolderPath, file).replace(/\\/g, '/');
+            const trackPath = path.join(audioFolderPath, file);
+			const previewPath = path.join("/", previewFolderPath, file).replace("mp3", "jpg");
             tracksData.push(
 			{
 				Name: trackName,
 				data: {
 					path: trackPath,
+					coverImage: previewPath,
 					artist: trackArtist,
 					title: trackTitle,     
 				}
@@ -31,7 +34,7 @@ fs.readdir(audioFolderPath, (err, files) => {
     });
 
     const jsonData = JSON.stringify(tracksData, null, 4);
-    const outputFilePath = path.join(audioFolderPath, 'tracks_data.json');
+    const outputFilePath = './music/json_files/tracks_data.json';
 
     fs.writeFile(outputFilePath, jsonData, err => {
         if (err) {
