@@ -45,11 +45,8 @@ function loadSong(track) {
 	artist.innerHTML = track.data.artist; // Artist
 	audio.src = "/" + track.data.path.replace(/\\/g, "/"); // Audio source
 	currentTimeBlock.innerHTML = timeCalc(audio.currentTime); // Time block calc
-
 	let previewPath = "/" + track.data.coverImage.replace(/\\/g, "/");
-	console.log(previewPath);
 	previewImg.style.background = `url("${previewPath}")`; // Preview download
-	// previewImg.style.background = `url("/music/cover_image/Ødyzon - constellation.jpg")`; // Preview download
 	
 	// download metadata
 	audio.onloadedmetadata = function() {
@@ -64,7 +61,6 @@ function loadSong(track) {
 		console.log('Playing song')
 		audio.play()
 	}
-
 }
 
 // Set interval of current time block change
@@ -247,7 +243,6 @@ prevBtn.addEventListener('click', prevSong)
 // }, 100);
 
 //Song progress change
-
 function updateProgress(e) {
 	const {duration, currentTime} = e.srcElement;
 	const progressPercent = (currentTime / duration) * 100;
@@ -391,6 +386,8 @@ function volumeToggle() {
 var volumeCurrent;
 var volumeRangeCurrent;
 volumeImg.addEventListener('click', volumeToggle)
+// Volume default
+audio.volume = 0.5;
 
 // Auto-next
 audio.addEventListener('ended', () => {
