@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="../styles/middle.css">
 	<link rel="stylesheet" href="../styles/sidebar_right_style.css">
 	<link rel="stylesheet" href="../styles/player.css">
+	<link rel="stylesheet" href="../styles/full_screen_player.css">
 	<title>Spotify</title>
 </head>
 <body>
@@ -502,6 +503,17 @@
 			</div>
 		</aside>
 	</section>
+	<section class="full-screen-player">
+		<div class="container">
+			<div class="full-screen-img">
+				<!-- <img src="../music/cover_image/sparky deathcap - september (speed up) .jpg"> -->
+			</div>
+			<div class="name">
+				<div class="title">green to blue (slowed + reverbed)</div>
+				<div class="artist">daniel_mp3</div>
+			</div>
+		</div>
+	</section>
 	<section class="player">
 		<div class="left-part">
 			<div class="track-info">
@@ -544,12 +556,11 @@
 			</div>
 			<div class="bottom-part">
 				<p class="current-time">none</p>
-				<!-- <input type="range" class="timeline" value="0"> -->
 				<div class="progress-container">
 					<div class="progress"></div>
 				</div>
-				<audio class="audio" volume="" preload="metadata"></audio>
 				<p class="song-duration">none</p>
+				<audio class="audio" volume="" preload="metadata"></audio>
 			</div>
 		</div>
 		<div class="right-part">
@@ -558,22 +569,21 @@
 					<img class="" src="../images&icons/images/volume.png">
 				</div>
 			</div>
-			<!-- <input type="range" class="timeline volume-range" value=""> -->
 			<div class="volume-range-container">
 				<div class="volume-range"></div>
 			</div>
 			<div class="point-wrapper">
-				<div class="point-inner">
+				<div class="point-inne current-playlistr">
 					<img src="../images&icons/images/playlist.png">
 				</div>
 			</div>
 			<div class="point-wrapper">
-				<div class="point-inner">
+				<div class="point-inner device">
 					<img src="../images&icons/images/device.png">
 				</div>
 			</div>
 			<div class="point-wrapper">
-				<div class="point-inner">
+				<div class="point-inner full-screen-btn">
 					<img src="../images&icons/images/expand.png">
 				</div>
 			</div>
@@ -585,5 +595,6 @@
 	<script src="../js/player/point-glowing.js"></script>
 	<!-- <script type="module" src="../modules/music_data.js"></script> -->
 	<script src="../js/player/functionality.js"></script>
+	<!-- <script src="../js/player/full_screen_player.js"></script> -->
 </body>
 </html>

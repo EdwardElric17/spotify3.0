@@ -4,6 +4,7 @@
         "data": {
             "path": "music\\default\\22Gz - Twirlanta.mp3",
             "coverImage": "music\\cover_image\\22Gz - Twirlanta.jpg",
+            "coverImageFull": "music\\cover_image_full\\22Gz - Twirlanta.jpg",
             "artist": "22Gz",
             "title": "Twirlanta"
         }
@@ -13,6 +14,7 @@
         "data": {
             "path": "music\\default\\Bleach - Never Meant To Belong ( Kayou Remix ) Slowed.mp3",
             "coverImage": "music\\cover_image\\Bleach - Never Meant To Belong ( Kayou Remix ) Slowed.jpg",
+            "coverImageFull": "music\\cover_image_full\\Bleach - Never Meant To Belong ( Kayou Remix ) Slowed.jpg",
             "artist": "Bleach",
             "title": "Never Meant To Belong ( Kayou Remix ) Slowed"
         }
@@ -22,6 +24,7 @@
         "data": {
             "path": "music\\default\\Chy - Whitley.mp3",
             "coverImage": "music\\cover_image\\Chy - Whitley.jpg",
+            "coverImageFull": "music\\cover_image_full\\Chy - Whitley.jpg",
             "artist": "Chy",
             "title": "Whitley"
         }
@@ -31,6 +34,7 @@
         "data": {
             "path": "music\\default\\daniel_mp3 - green to blue (slowed + reverbed).mp3",
             "coverImage": "music\\cover_image\\daniel_mp3 - green to blue (slowed + reverbed).jpg",
+            "coverImageFull": "music\\cover_image_full\\daniel_mp3 - green to blue (slowed + reverbed).jpg",
             "artist": "daniel_mp3",
             "title": "green to blue (slowed + reverbed)"
         }
@@ -40,6 +44,7 @@
         "data": {
             "path": "music\\default\\heart - вчера я видел сон.mp3",
             "coverImage": "music\\cover_image\\heart - вчера я видел сон.jpg",
+            "coverImageFull": "music\\cover_image_full\\heart - вчера я видел сон.jpg",
             "artist": "heart",
             "title": "вчера я видел сон"
         }
@@ -49,6 +54,7 @@
         "data": {
             "path": "music\\default\\Hiroyuki Sawano ft Mika Kobayashi - Attack on titan OST.mp3",
             "coverImage": "music\\cover_image\\Hiroyuki Sawano ft Mika Kobayashi - Attack on titan OST.jpg",
+            "coverImageFull": "music\\cover_image_full\\Hiroyuki Sawano ft Mika Kobayashi - Attack on titan OST.jpg",
             "artist": "Hiroyuki Sawano ft Mika Kobayashi",
             "title": "Attack on titan OST"
         }
@@ -58,6 +64,7 @@
         "data": {
             "path": "music\\default\\hisohkah feat. WMD - School Rooftop (Bird Sounds).mp3",
             "coverImage": "music\\cover_image\\hisohkah feat. WMD - School Rooftop (Bird Sounds).jpg",
+            "coverImageFull": "music\\cover_image_full\\hisohkah feat. WMD - School Rooftop (Bird Sounds).jpg",
             "artist": "hisohkah feat. WMD",
             "title": "School Rooftop (Bird Sounds)"
         }
@@ -67,6 +74,7 @@
         "data": {
             "path": "music\\default\\memo boy - Brian is the Most Beautiful (slowed + reverb).mp3",
             "coverImage": "music\\cover_image\\memo boy - Brian is the Most Beautiful (slowed + reverb).jpg",
+            "coverImageFull": "music\\cover_image_full\\memo boy - Brian is the Most Beautiful (slowed + reverb).jpg",
             "artist": "memo boy",
             "title": "Brian is the Most Beautiful (slowed + reverb)"
         }
@@ -76,6 +84,7 @@
         "data": {
             "path": "music\\default\\NKOHA - ガッツ [preview].mp3",
             "coverImage": "music\\cover_image\\NKOHA - ガッツ [preview].jpg",
+            "coverImageFull": "music\\cover_image_full\\NKOHA - ガッツ [preview].jpg",
             "artist": "NKOHA",
             "title": "ガッツ [preview]"
         }
@@ -85,6 +94,7 @@
         "data": {
             "path": "music\\default\\NodPunk - Кино.mp3",
             "coverImage": "music\\cover_image\\NodPunk - Кино.jpg",
+            "coverImageFull": "music\\cover_image_full\\NodPunk - Кино.jpg",
             "artist": "NodPunk",
             "title": "Кино"
         }
@@ -94,6 +104,7 @@
         "data": {
             "path": "music\\default\\OPM - Garou's Theme.mp3",
             "coverImage": "music\\cover_image\\OPM - Garou's Theme.jpg",
+            "coverImageFull": "music\\cover_image_full\\OPM - Garou's Theme.jpg",
             "artist": "OPM",
             "title": "Garou's Theme"
         }
@@ -103,6 +114,7 @@
         "data": {
             "path": "music\\default\\pyrokinesis - я краснею при тебе как.mp3",
             "coverImage": "music\\cover_image\\pyrokinesis - я краснею при тебе как.jpg",
+            "coverImageFull": "music\\cover_image_full\\pyrokinesis - я краснею при тебе как.jpg",
             "artist": "pyrokinesis",
             "title": "я краснею при тебе как"
         }
@@ -112,6 +124,7 @@
         "data": {
             "path": "music\\default\\richy mitch & the coal miners ♡ - evergreen (speed up).mp3",
             "coverImage": "music\\cover_image\\richy mitch & the coal miners ♡ - evergreen (speed up).jpg",
+            "coverImageFull": "music\\cover_image_full\\richy mitch & the coal miners ♡ - evergreen (speed up).jpg",
             "artist": "richy mitch & the coal miners ♡",
             "title": "evergreen (speed up)"
         }
@@ -121,6 +134,7 @@
         "data": {
             "path": "music\\default\\scxpz + - racing hearts.mp3",
             "coverImage": "music\\cover_image\\scxpz + - racing hearts.jpg",
+            "coverImageFull": "music\\cover_image_full\\scxpz + - racing hearts.jpg",
             "artist": "scxpz +",
             "title": "racing hearts"
         }
@@ -130,6 +144,7 @@
         "data": {
             "path": "music\\default\\slow - i dont wanna do this anymore.mp3",
             "coverImage": "music\\cover_image\\slow - i dont wanna do this anymore.jpg",
+            "coverImageFull": "music\\cover_image_full\\slow - i dont wanna do this anymore.jpg",
             "artist": "slow",
             "title": "i dont wanna do this anymore"
         }
@@ -139,6 +154,7 @@
         "data": {
             "path": "music\\default\\sparky deathcap - september (speed up) .mp3",
             "coverImage": "music\\cover_image\\sparky deathcap - september (speed up) .jpg",
+            "coverImageFull": "music\\cover_image_full\\sparky deathcap - september (speed up) .jpg",
             "artist": "sparky deathcap",
             "title": "september (speed up) "
         }
@@ -148,6 +164,7 @@
         "data": {
             "path": "music\\default\\théos, Antent - mirage.mp3",
             "coverImage": "music\\cover_image\\théos, Antent - mirage.jpg",
+            "coverImageFull": "music\\cover_image_full\\théos, Antent - mirage.jpg",
             "artist": "théos, Antent",
             "title": "mirage"
         }
@@ -157,6 +174,7 @@
         "data": {
             "path": "music\\default\\thx so much - Hate.mp3",
             "coverImage": "music\\cover_image\\thx so much - Hate.jpg",
+            "coverImageFull": "music\\cover_image_full\\thx so much - Hate.jpg",
             "artist": "thx so much",
             "title": "Hate"
         }
@@ -166,6 +184,7 @@
         "data": {
             "path": "music\\default\\TikTok - Godjo Satoru.mp3",
             "coverImage": "music\\cover_image\\TikTok - Godjo Satoru.jpg",
+            "coverImageFull": "music\\cover_image_full\\TikTok - Godjo Satoru.jpg",
             "artist": "TikTok",
             "title": "Godjo Satoru"
         }
@@ -175,6 +194,7 @@
         "data": {
             "path": "music\\default\\XXXTENTACION - Teeth (Trap Remix).mp3",
             "coverImage": "music\\cover_image\\XXXTENTACION - Teeth (Trap Remix).jpg",
+            "coverImageFull": "music\\cover_image_full\\XXXTENTACION - Teeth (Trap Remix).jpg",
             "artist": "XXXTENTACION",
             "title": "Teeth (Trap Remix)"
         }
@@ -184,6 +204,7 @@
         "data": {
             "path": "music\\default\\Ødyzon - constellation.mp3",
             "coverImage": "music\\cover_image\\Ødyzon - constellation.jpg",
+            "coverImageFull": "music\\cover_image_full\\Ødyzon - constellation.jpg",
             "artist": "Ødyzon",
             "title": "constellation"
         }

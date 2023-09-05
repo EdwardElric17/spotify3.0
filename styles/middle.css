@@ -75,7 +75,7 @@
 	background: #000;
 	border-radius: 42px;
 	cursor: pointer;
-	z-index: 100;
+	z-index: 5;
 }
 .my-profile img:first-child {
 	height: 40px;

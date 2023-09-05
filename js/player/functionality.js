@@ -16,14 +16,25 @@ const player = document.querySelector('.player'),
 	volumeImg = document.querySelector('.player .volume-symbol'),
 	volumeRange = document.querySelector('.player .volume-range'),
 	volumeRangeContainer = document.querySelector('.player .volume-range-container'),
-	music_default_url = '../../music/json_files/tracks_data.json'
+	fullScreenPlayer = document.querySelector('.full-screen-player'),
+	fullScreenBtn = document.querySelector('.full-screen-btn'),
+	previewFull = document.querySelector('.full-screen-img'),
+	previewFullTitle = document.querySelector('.full-screen-player .name .title'),
+	previewFullArtist = document.querySelector('.full-screen-player .name .artist'),
+	music_url_default = '../../music/json_files/tracks_data.json';
 
 let dataLength = 0; // data size
 let songCash = []; // Song cash
 let songIndex; // Песня по умолчанию
 
+// Full screen
+fullScreenBtn.addEventListener('click', () => {
+	fullScreenPlayer.classList.toggle('full-screened');
+	player.classList.toggle('player-full-screened');
+})
+
 // Init song
-fetch(music_default_url)
+fetch(music_url_default)
 	.then(response => {
 		return response.json();
 	})
@@ -43,15 +54,20 @@ function loadSong(track) {
 	
 	title.innerHTML = track.data.title; // Title
 	artist.innerHTML = track.data.artist; // Artist
+	previewFullTitle.innerHTML = track.data.title;
+	previewFullArtist.innerHTML = track.data.artist;
 	audio.src = "/" + track.data.path.replace(/\\/g, "/"); // Audio source
 	currentTimeBlock.innerHTML = timeCalc(audio.currentTime); // Time block calc
 	let previewPath = "/" + track.data.coverImage.replace(/\\/g, "/");
+	let previewFullPath = "/" + track.data.coverImageFull.replace(/\\/g, "/");
 	previewImg.style.background = `url("${previewPath}")`; // Preview download
+	previewFull.style.background = `url("${previewFullPath}")`;
+	console.log(previewFullPath)
 	
 	// download metadata
 	audio.onloadedmetadata = function() {
 		songDuration.innerHTML = timeCalc(audio.duration); 
-		audio.currentTime = '0';
+		// audio.currentTime = 0;
 	};
 	// check playing status
 	if (playStop.classList.contains('stoped-song')) { 
@@ -111,7 +127,7 @@ playStop.addEventListener('click', () => {
 
 // Next/prev song
 function nextSong() {
-	fetch(music_default_url)
+	fetch(music_url_default)
 	.then(response => response.json())
 	.then(data => {
 
@@ -163,7 +179,7 @@ function nextSong() {
 	})
 }
 function prevSong() {
-	fetch(music_default_url)
+	fetch(music_url_default)
 	.then(response => response.json())
 	.then(data => {
 

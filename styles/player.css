@@ -8,7 +8,6 @@
 	width: 100%;
 	height: 122px;
 	min-height: 122px;
-	background: #181818;
 	background: rgba(24, 24, 24);
 	padding: 0px 33px;
 	z-index: 0;
@@ -130,9 +129,6 @@
 	border-radius: 4px;
 	/* transition: width 10s linear; */
 }
-.volume-symbol .off{
-
-}
 .volume-range-container {
 	width: 119px;
 	height: 6px;
@@ -171,6 +167,10 @@
 .mixed,
 .mute {
 	background: rgb(45, 45, 45) !important;
+}
+.player-full-screened {
+	background: rgba(0, 0, 0, 0.75);
+	backdrop-filter: blur(30px);
 }
 @keyframes pointInnerClick {
 	0% {

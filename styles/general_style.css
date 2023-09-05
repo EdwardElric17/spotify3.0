@@ -21,6 +21,7 @@
 		"asideL main asideR";
 	grid-template-columns: 310px 3fr 0px;
 	transition: all 0.3s ease;
+	/* display: none; */
 }
 .sidebar-left {
 	grid-area: asideL;

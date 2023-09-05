@@ -1,0 +1,49 @@
+.full-screen-player {
+	// visibility: visible;
+	position: fixed;
+	left: 0;
+	bottom: 122px;
+	z-index: 10;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.75);
+	backdrop-filter: blur(30px);
+	.container {
+		// visibility: inherit;
+		display: flex;
+		flex-direction: column;	
+		align-items: start;
+		gap: 12px;
+		.full-screen-img {
+			// visibility: inherit;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 360px;
+			height: 360px;
+			border-radius: 7px;
+		}
+		.name {
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+			gap: 7px;
+			.title {
+				color: rgba($color: #ffffff, $alpha: 1.0);
+				font-size: 18px;
+				font-weight: 100;
+			}
+			.artist {
+				color: rgba($color: #B3B3B3, $alpha: 1.0);
+				font-size: 14px;
+				font-weight: 100;
+			}
+		};
+	}
+}
+.full-screened {
+	display: flex;
+}

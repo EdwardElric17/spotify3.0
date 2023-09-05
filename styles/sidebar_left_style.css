@@ -82,7 +82,7 @@
 	bottom: 385px;
 	left: 270px;
 	cursor: pointer;
-	z-index: 12;
+	z-index: 5;
 	transform: rotate(0deg);
 	filter: none;
 	transition: all 0.2s;

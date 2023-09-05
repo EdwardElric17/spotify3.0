@@ -20,12 +20,14 @@ fs.readdir(audioFolderPath, (err, files) => {
 			const trackTitle = trackName.split(' - ')[1];
             const trackPath = path.join(audioFolderPath, file);
 			const previewPath = path.join(previewFolderPath, file).replace(".mp3", ".jpg");
+			const previewFullPath = path.join(previewFolderPath, file).replace("cover_image", "cover_image_full").replace(".mp3", ".jpg");
             tracksData.push(
 			{
 				Name: trackName,
 				data: {
 					path: trackPath,
 					coverImage: previewPath,
+					coverImageFull: previewFullPath,
 					artist: trackArtist,
 					title: trackTitle,     
 				}
