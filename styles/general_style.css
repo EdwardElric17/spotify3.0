@@ -31,37 +31,3 @@
 .sidebar-right {
 	grid-area: asideR;
 }
-
-.point-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 60px;
-	height: 60px;
-	cursor: pointer;
-	position: relative;
-	background: rgba(24, 24, 24);
-}
-.point-inner {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: rgba(24, 24, 24);
-	width: 58.25px;
-	height: 58.25px;
-}
-.looped,
-.mixed {
-	background: rgb(45, 45, 45) !important;
-}
-@keyframes pointInnerClick {
-	0% {
-		transform: scale(100%);
-	}
-	50% {
-		transform: scale(115%);
-	}
-	100% {
-		transform: scale(100%);
-	}
-}

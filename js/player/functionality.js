@@ -389,7 +389,7 @@ volumeImg.addEventListener('click', volumeToggle)
 // Volume default
 audio.volume = 0.5;
 
-// Auto-next
+// Auto-next abd looping track
 audio.addEventListener('ended', () => {
 	console.log('ended!')
 	if (loopTrack.classList.contains('looped')) {
@@ -401,7 +401,7 @@ audio.addEventListener('ended', () => {
 	}
 })
 
-// LoopTrack
+// LoopTrack function
 loopTrack.addEventListener('click', () => {
 	if (loopTrack.classList.contains('looped')) {
 		loopTrack.classList.toggle('looped');
