@@ -10,7 +10,7 @@
 	min-height: 122px;
 	background: rgba(24, 24, 24);
 	padding: 0px 33px;
-	z-index: 0;
+	z-index: 11;
 }
 
 .player .left-part {
@@ -167,10 +167,11 @@
 .mixed,
 .mute {
 	background: rgb(45, 45, 45) !important;
+	border: 1px solid #454545;
 }
 .player-full-screened {
-	background: rgba(0, 0, 0, 0.75);
-	backdrop-filter: blur(30px);
+	background: transparent !important;
+	/* backdrop-filter: blur(30px); */
 }
 @keyframes pointInnerClick {
 	0% {

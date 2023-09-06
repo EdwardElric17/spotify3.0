@@ -6,6 +6,8 @@ const player = document.querySelector('.player'),
 	songDuration = document.querySelector('.song-duration'),
 	currentTimeBlock = document.querySelector('.current-time'),
 	like = document.querySelector('.player .like'),
+	pointInnerBtn = document.querySelectorAll('.player .point-inner'),
+	pointWrapperBtn = document.querySelectorAll('.player .point-wrapper'),
 	mix = document.querySelector('.player .mix'),
 	prevBtn = document.querySelector('.player .prevBtn'),
 	playStop = document.querySelector('.player .play-stop'),
@@ -31,6 +33,13 @@ let songIndex; // Песня по умолчанию
 fullScreenBtn.addEventListener('click', () => {
 	fullScreenPlayer.classList.toggle('full-screened');
 	player.classList.toggle('player-full-screened');
+	pointInnerBtn.forEach((elem) => {
+		elem.classList.toggle('player-full-screened');
+		
+	})
+	pointWrapperBtn.forEach((elem) => {
+		elem.classList.toggle('player-full-screened');
+	})
 })
 
 // Init song
